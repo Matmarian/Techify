@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  @apply flex flex-col min-h-screen bg-Seventh
+  
+}
+
+footer{
+  @apply mt-auto;
+}
+
+.container{
+  @apply py-0 px-6 max-w-screen-xl my-0 mx-auto;
+  /* padding: 0 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto; */
+ 
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5, 
+h6 {
+  font-family: var(--font-secondary);
+  font-weight: 700;}
+  
+  
+
+h1{
+  font-size: 3rem;
+  @apply text-white
+
+}
+
+h2{
+  font-size: 2rem;
+  @apply text-white
+}
+
+h3{
+  font-size: 1.5rem;
+  @apply text-white
+}
+
+h4{
+  font-size: 1rem;
+  @apply text-white
+}
+
+h5{
+  font-size: 0.75rem;
+  @apply text-white
+}
+
+h6{
+  font-size: 0.5rem;
+  @apply text-white
+}
+
+p{
+  @apply text-white
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity:unset;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 1.5s ease-out;
+}
+
+button{
+  font-size: 1.5rem;
+  color: aliceblue;
+}
