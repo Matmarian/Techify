@@ -17,7 +17,7 @@ const Dashboard = () => {
     if (isMounted && !user?.login) {
       router.push("/login");
     }
-  }, [isMounted, user]);
+  }, [isMounted, user, router]);
 
   if (!isMounted) {
     return null;  // Prevenir el renderizado hasta que se monte en el cliente

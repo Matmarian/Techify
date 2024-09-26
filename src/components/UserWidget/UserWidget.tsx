@@ -32,7 +32,7 @@ const UserWidget = () => {
             }
         }
         router.refresh();  // Refrescamos para asegurarnos de que los datos son los correctos.
-    }, []);
+    }, [router]);
 
     if (!isMounted) {
         return null;  // Prevenir el renderizado en el servidor.
